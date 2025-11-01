@@ -39,19 +39,19 @@ def scrape_data(soup: BeautifulSoup):
             if variable == "Απόφοιτοι ΠΠΣ Ιδρύματος":
                 graduates = var.find_next_sibling('div', class_='stats-item-variable-value').text.strip()
             elif variable == "Εγγεγραμμένοι φοιτητές ΠΠΣ Ιδρύματος":
-                registed_students = var.find_next_sibling('div', class_='stats-item-variable-value').text.strip()
+                registed = var.find_next_sibling('div', class_='stats-item-variable-value').text.strip()
             elif variable == "Εισαχθέντες φοιτητές ΠΠΣ Ιδρύματος":
                 freshmen = var.find_next_sibling('div', class_='stats-item-variable-value').text.strip()
             elif variable == "Ενεργοί φοιτητές ΠΠΣ Ιδρύματος":
-                active_students = var.find_next_sibling('div', class_='stats-item-variable-value').text.strip()
+                active = var.find_next_sibling('div', class_='stats-item-variable-value').text.strip()
 
         data.append({
-            'institution': institution.string[institution.end():],
+            'institution': institution.string[institution.end():].strip(),
             'established': established.string[established.end():],
-            "gradutes": graduates,
-            "registed_students": registed_students,
+            "graduates": graduates,
+            "registed": registed,
             "freshmen": freshmen,
-            "active_students": active_students,
+            "active": active,
         })
 
         save_to_csv(data, f'hahe_{payload.get("filter[collectionyear]")}.csv')
