@@ -48,10 +48,10 @@ def scrape_data(soup: BeautifulSoup):
         data.append({
             'institution': institution.string[institution.end():].strip(),
             'established': established.string[established.end():],
-            "graduates": graduates,
-            "registered": registered,
-            "freshmen": freshmen,
-            "active": active,
+            "graduates": int(graduates.replace('.', '')),
+            "registered": int(registered.replace('.', '')),
+            "freshmen": int(freshmen.replace('.', '')),
+            "active": int(active.replace('.', '')),
         })
 
         save_to_csv(data, f'hahe_{payload.get("filter[collectionyear]")}.csv')
