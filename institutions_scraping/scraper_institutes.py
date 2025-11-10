@@ -49,7 +49,8 @@ def save_to_csv(data: list[list[dict]], filename: str):
         data (list): List of dictionaries containing the scraped data.
         filename (str): The name of the CSV file to save the data.
     """
-    df = pd.DataFrame(data)
+    flat_data = [item for sublist in data for item in sublist]
+    df = pd.DataFrame(flat_data)
     df.to_csv(filename, index=False)
 
 
@@ -64,40 +65,6 @@ def map_academic_year(year: str) -> str:
     return year_map.get(year, "Unknown academic year")
 
 
-# def map_institute(id: str) -> str:
-#     """Map programme names to standardized names."""
-#     institute_map = {
-#         # '': '- Select Institute -', # Corresponds to the first option: '- Επιλέξτε Ίδρυμα -'
-#         '1': 'Athens School of Fine Arts',
-#         '2': 'Aristotle University of Thessaloniki',
-#         '36': 'School of Pedagogical and Technological Education (ASPETE)',
-#         '3': 'Agricultural University of Athens',
-#         '4': 'Democritus University of Thrace',
-#         '131': 'International Hellenic University',
-#         '5': 'National and Kapodistrian University of Athens',
-#         '6': 'National Technical University of Athens',
-#         '22': 'Hellenic Open University',
-#         '130': 'Hellenic Mediterranean University',
-#         '7': 'Ionian University',
-#         '8': 'Athens University of Economics and Business',
-#         '9': 'University of the Aegean',
-#         '129': 'University of West Attica',
-#         '10': 'University of Western Macedonia',
-#         '11': 'University of Thessaly',
-#         '12': 'University of Ioannina',
-#         '13': 'University of Crete',
-#         '14': 'University of Macedonia',
-#         '15': 'University of Patras',
-#         '16': 'University of Piraeus',
-#         '17': 'University of Peloponnese',
-#         '18': 'Panteion University of Social and Political Sciences',
-#         '19': 'Technical University of Crete',
-#         '39': 'Hellenic Army Academy', # Στρατιωτική Σχολή Ευελπίδων
-#         '40': 'Hellenic Air Force Academy', # Σχολή Ικάρων
-#         '41': 'Hellenic Naval Academy', # Σχολή Ναυτικών Δοκίμων
-#         '20': 'Harokopio University'
-#     }
-#     return institute_map.get(id, "Unknown programme")
 class InstituteMapper:
     """
     A utility class to map institution IDs to their English names for Greek 
@@ -164,15 +131,12 @@ def scrape_data(soup: BeautifulSoup):
     for item in soup_data:
         programme = item.find('div', class_='stats-item-title').text.strip()
         programme = re.search("^ΠΠΣ ::", programme)
-        print(f"programme after re search: {programme.string[programme.end():].strip() if programme else 'No match'}")
 
         established = item.find('span', class_='stats-item-date').text.strip()
         established = re.search("^Ημ/νία Ίδρυσης: ", established)
 
         variables = item.find_all('div', class_='stats-item-variable-title')
-        print(f"variables: {variables}")
         for var in variables:
-            print(var)
             variable = var.text.strip()
             if variable == "Απόφοιτοι ΠΠΣ":
                 graduate = var.find_next_sibling('div', class_='stats-item-variable-value').text.strip()
@@ -183,10 +147,11 @@ def scrape_data(soup: BeautifulSoup):
             elif variable == "Ενεργοί φοιτητές ΠΠΣ":
                 active = var.find_next_sibling('div', class_='stats-item-variable-value').text.strip()
 
+        programme = programme.string[programme.end():].strip() if programme else "Unknown"
         scraped_data.append({
             "institution": institute_mapper.get_institute_map().get(data.get("filter[instituteid]")) if data.get("filter[instituteid]") else "Unknown",
             "academic_year": map_academic_year(data.get("filter[collectionyear]")),
-            'programme': programme.string[programme.end():].strip() if programme else "Unknown",
+            "programme": programme.strip('"'),
             'established': established.string[established.end():] if established else "Unknown",
             "graduate": int(graduate.replace('.', '')) if graduate != '--' else 0,
             "registered": int(registered.replace('.', '')) if registered != '--' else 0,
@@ -208,8 +173,6 @@ for year in range(2022, 2026):
         soup = BeautifulSoup(response.text, "html.parser")
 
         collected_data.append(scrape_data(soup))
-    # save_to_csv(collected_data, f"hahe_{data.get('filter[instituteid]')}_{data.get('filter[collectionyear]')}.csv")
     print(collected_data)
+    save_to_csv(collected_data, f"hahe_all_institutes_{data.get('filter[collectionyear]')}.csv")
     break
-
-# print(collected_data)
