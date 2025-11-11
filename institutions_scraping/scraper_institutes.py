@@ -174,6 +174,5 @@ for year in range(2022, 2026):
 
         collected_data.append(scrape_data(soup))
     print(collected_data)
-    # save_to_csv(collected_data, f"hahe_all_institutes_{data.get('filter[collectionyear]')}.csv")
 
 save_to_csv(collected_data, f"hahe_all_institutes_2022_2025.csv")
