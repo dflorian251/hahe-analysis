@@ -96,7 +96,7 @@ def scrape_data(soup: BeautifulSoup):
 
         programme = programme.string[programme.end():].strip() if programme else "Unknown"
         programme = re.sub(r"[\(\[].*?[\)\]]", "", programme).strip()
-        programme = programme.replace(" ΤΕ", "")
+        programme = programme.replace(" ΤΕ", "").replace('"', "").strip()
         scraped_data.append({
             "institution": InstituteMapper().get_map().get(data.get("filter[instituteid]")) if data.get("filter[instituteid]") else "Unknown",
             "academic_year": AcademicYearMapper().map(data.get("filter[collectionyear]")),
