@@ -1,0 +1,47 @@
+<svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">
+<title>Your Diagram Title</title>
+<!-- Generated with SankeyMATIC: 11/30/2025, 3:54:46 PM -->
+<rect height="600" width="600" fill="#ffffff"></rect>
+<g transform="translate(92.95598,18)">
+<g id="sankey_flows">
+<path id="flow2" d="M12 439.95472C108.91654 439.95472 108.91654 393.2971 205.83309 393.2971" fill="none" stroke-width="174.21556" stroke="#17becf" opacity="0.45"><title>Registered → Total: 696,779</title></path>
+<path id="flow1" d="M12 202.62789C108.91654 202.62789 108.91654 260.78277 205.83309 260.78277" fill="none" stroke-width="90.8131" stroke="#bcbd22" opacity="0.45"><title>Active → Total: 363,209</title></path>
+<path id="flow0" d="M12 43.67317C108.91654 43.67317 108.91654 206.64055 205.83309 206.64055" fill="none" stroke-width="17.47134" stroke="#e377c2" opacity="0.45"><title>Enrolled → Total: 69,877</title></path>
+<path id="flow3" d="M217.83309 197.90488v13.57387L411.66617 211.47875v-13.57387z" fill="#1f77b4" stroke-width="0.5" stroke="#1f77b4" opacity="0.45"><title>Total → Graduate: 54,289</title></path>
+</g>
+<g id="sankey_nodes">
+<g class="node">
+<rect id="r0" class="for_r0" x="0" y="34.9375" height="17.47134" width="12" fill="#e377c2" fill-opacity="1"><title>Enrolled:
+69,877</title></rect>
+</g>
+<g class="node">
+<rect id="r1" class="for_r1" x="205.83309" y="197.90488" height="282.5" width="12" fill="#7f7f7f" fill-opacity="1"><title>Total:
+1,129,865</title></rect>
+</g>
+<g class="node">
+<rect id="r2" class="for_r2" x="0" y="157.22134" height="90.8131" width="12" fill="#bcbd22" fill-opacity="1"><title>Active:
+363,209</title></rect>
+</g>
+<g class="node">
+<rect id="r3" class="for_r3" x="0" y="352.84694" height="174.21556" width="12" fill="#17becf" fill-opacity="1"><title>Registered:
+696,779</title></rect>
+</g>
+<g class="node">
+<rect id="r4" class="for_r4" x="411.66617" y="197.90488" height="13.57387" width="12" fill="#1f77b4" fill-opacity="1"><title>Graduate:
+54,289</title></rect>
+</g>
+</g>
+<g id="sankey_labels" font-family="sans-serif" font-size="16px" fill="#000000">
+<text text-anchor="middle" x="207.04402" y="577" font-size="12px" font-weight="400" fill="#336781">Made at SankeyMATIC.com</text>
+<rect id="label0_bg" class="for_r0" x="-65.17473" y="22.75317" width="63.54203" height="41.12" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label0" class="for_r0" text-anchor="end" x="-6.29754" y="43.67317" font-weight="400" font-size="14.4px" dy="-5.52">Enrolled<tspan x="-6.29754" dy="19.32" font-weight="400" font-size="17.6px">69,877</tspan></text>
+<rect id="label1_bg" class="for_r1" x="168.02763" y="318.23489" width="88.21458" height="41.11998" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label1" class="for_r1" text-anchor="middle" x="211.83309" y="339.15488" font-weight="400" font-size="14.4px" dy="-5.52">Total<tspan x="211.83309" dy="19.32" font-weight="400" font-size="17.6px">1,129,865</tspan></text>
+<rect id="label2_bg" class="for_r2" x="-74.9716" y="181.70788" width="73.33891" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label2" class="for_r2" text-anchor="end" x="-6.29754" y="202.62789" font-weight="400" font-size="14.4px" dy="-5.52">Active<tspan x="-6.29754" dy="19.32" font-weight="400" font-size="17.6px">363,209</tspan></text>
+<rect id="label3_bg" class="for_r3" x="-80.95598" y="419.03472" width="79.32328" height="41.11998" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label3" class="for_r3" text-anchor="end" x="-6.29754" y="439.95472" font-weight="400" font-size="14.4px" dy="-5.52">Registered<tspan x="-6.29754" dy="19.32" font-weight="400" font-size="17.6px">696,779</tspan></text>
+<rect id="label4_bg" class="for_r4" x="425.29887" y="183.77181" width="69.74516" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label4" class="for_r4" text-anchor="start" x="429.96371" y="204.69182" font-weight="400" font-size="14.4px" dy="-5.52">Graduate<tspan x="429.96371" dy="19.32" font-weight="400" font-size="17.6px">54,289</tspan></text>
+</g>
+</g></svg>
