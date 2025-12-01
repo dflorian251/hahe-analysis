@@ -296,7 +296,14 @@ class ProgramMapper(Mapper):
             'Οικονομίας και Βιώσιμης Ανάπτυξης (πρώην Οικιακής Οικονομίας και Οικολογίας': 'Economy and Sustainable Development (formerly Home Economics and Ecology)',
             'Πληροφορικής και Τηλεματικής': 'Informatics and Telematics',
             'Αειφορικής Γεωργίας': 'Sustainable Agriculture',
-            'Γεωπονίας  - νέο': 'Agriculture - new'
+            'Γεωπονίας  - νέο': 'Agriculture - new',
+            'Δημόσια Διοίκηση':	'Public Administration',
+            'Διοίκηση Τουρισμού': 'Tourism Management',
+            'Ισπανικής Γλώσσας και Πολιτισμού': 'Spanish Language and Culture',
+            'Σπουδές στις Φυσικές Επιστήμες': 'Studies in Natural Sciences',
+            'Σπουδές στον Ελληνικό Πολιτισμό': 'Studies in Hellenic (Greek) Culture',
+            'Σπουδές στον Ευρωπαϊκό Πολιτισμό': 'Studies in European Culture',
+            'Σπουδές Κινηματογραφικής Γραφής, Πρακτικής και Έρευνας': 'Studies in Film Writing, Practice, and Research',
         }
         
     def get_map(self) -> dict:
