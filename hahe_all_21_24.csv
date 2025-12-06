@@ -1,4 +1,4 @@
-institution,academic_year,programme,established,graduate,registered,enrolled,active
+institution,academic_year,program,established,graduate,registered,enrolled,active
 Athens School of Fine Arts,2020-2021,Fine Arts,03/07/1990,99,1570,140,983
 Athens School of Fine Arts,2020-2021,Art Theory and History,07/09/2009,116,577,83,443
 Aristotle University of Thessaloniki,2020-2021,English Language and Literature,03/05/1983,223,1557,227,806
@@ -147,7 +147,7 @@ International Hellenic University,2020-2021,Clothing Design and Technology,06/09
 International Hellenic University,2020-2021,Food Technology,24/11/1983,29,1095,0,558
 International Hellenic University,2020-2021,Agricultural Technologists,06/03/2013,132,2515,0,1007
 International Hellenic University,2020-2021,Physiotherapy,24/11/1983,59,480,0,459
-National and Kapodistrian University of Athens,2020-2021,Unknown,19/07/2019,0,23,23,23
+National and Kapodistrian University of Athens,2020-2021,"BA Program in the Archaeology, History, and Literature of Ancient Greece",19/07/2019,0,23,23,23
 National and Kapodistrian University of Athens,2020-2021,English Language and Literature,23/06/1951,263,4551,273,1026
 National and Kapodistrian University of Athens,2020-2021,"Agricultural Development, Agrifood and Natural Resources Management",29/01/2019,0,150,105,150
 National and Kapodistrian University of Athens,2020-2021,Aerospace Science and Technology,29/01/2019,0,267,107,267
@@ -204,14 +204,14 @@ National Technical University of Athens,2020-2021,Mechanical Engineering,30/10/1
 National Technical University of Athens,2020-2021,Naval Architects and Mechanical Engineering,27/08/1982,83,1338,123,762
 National Technical University of Athens,2020-2021,Civil Engineering,20/06/1887,160,2493,186,1341
 National Technical University of Athens,2020-2021,Chemical Engineering,30/10/1917,175,1708,185,991
-Hellenic Open University,2020-2021,Unknown,30/01/2018,0,1821,823,1821
-Hellenic Open University,2020-2021,Unknown,21/03/2018,0,686,328,686
-Hellenic Open University,2020-2021,Unknown,11/12/1998,827,5024,816,4221
-Hellenic Open University,2020-2021,Unknown,11/12/1998,44,244,38,171
-Hellenic Open University,2020-2021,Unknown,11/12/1998,156,2014,386,1378
-Hellenic Open University,2020-2021,Unknown,11/12/1998,31,445,71,240
-Hellenic Open University,2020-2021,Unknown,11/12/1998,534,2720,342,2055
-Hellenic Open University,2020-2021,Unknown,11/12/1998,386,2017,214,1341
+Hellenic Open University,2020-2021,Public Administration,30/01/2018,0,1821,823,1821
+Hellenic Open University,2020-2021,Tourism Management,21/03/2018,0,686,328,686
+Hellenic Open University,2020-2021,Business Administration,11/12/1998,827,5024,816,4221
+Hellenic Open University,2020-2021,Spanish Language and Culture,11/12/1998,44,244,38,171
+Hellenic Open University,2020-2021,Informatics,11/12/1998,156,2014,386,1378
+Hellenic Open University,2020-2021,Studies in Natural Sciences,11/12/1998,31,445,71,240
+Hellenic Open University,2020-2021,Studies in Hellenic (Greek) Culture,11/12/1998,534,2720,342,2055
+Hellenic Open University,2020-2021,Studies in European Culture,11/12/1998,386,2017,214,1341
 Hellenic Mediterranean University,2020-2021,Agriculture,07/05/2019,0,404,223,403
 Hellenic Mediterranean University,2020-2021,Business and Tourism Management,07/05/2019,0,587,346,587
 Hellenic Mediterranean University,2020-2021,Management Science and Technology,07/05/2019,11,365,226,365
@@ -613,7 +613,7 @@ Harokopio University,2020-2021,Informatics and Telematics,07/07/2006,79,912,152,
 Athens School of Fine Arts,2021-2022,Fine Arts,03/07/1990,69,1497,520,881
 Athens School of Fine Arts,2021-2022,Art Theory and History,07/09/2009,126,623,151,452
 Aristotle University of Thessaloniki,2021-2022,English Language and Literature,03/05/1983,198,1638,247,881
-Aristotle University of Thessaloniki,2021-2022,Unknown,01/09/2021,0,60,61,60
+Aristotle University of Thessaloniki,2021-2022,Medical English Program in AUTH,01/09/2021,0,60,61,60
 Aristotle University of Thessaloniki,2021-2022,Agricultural and Surveying Engineering,24/10/1962,61,923,68,556
 Aristotle University of Thessaloniki,2021-2022,Architectural Engineering,03/05/1983,128,1356,170,1003
 Aristotle University of Thessaloniki,2021-2022,Biology,11/04/1973,122,1000,157,583
@@ -759,7 +759,7 @@ International Hellenic University,2021-2022,Clothing Design and Technology,06/09
 International Hellenic University,2021-2022,Food Technology,24/11/1983,29,1017,0,414
 International Hellenic University,2021-2022,Agricultural Technologists,06/03/2013,173,2216,0,831
 International Hellenic University,2021-2022,Physiotherapy,24/11/1983,79,307,2,252
-National and Kapodistrian University of Athens,2021-2022,Unknown,19/07/2019,0,38,32,38
+National and Kapodistrian University of Athens,2021-2022,"BA Program in the Archaeology, History, and Literature of Ancient Greece",19/07/2019,0,38,32,38
 National and Kapodistrian University of Athens,2021-2022,English Language and Literature,23/06/1951,214,4735,255,1186
 National and Kapodistrian University of Athens,2021-2022,"Agricultural Development, Agrifood and Natural Resources Management",29/01/2019,0,206,85,206
 National and Kapodistrian University of Athens,2021-2022,Aerospace Science and Technology,29/01/2019,0,217,47,217
@@ -816,14 +816,14 @@ National Technical University of Athens,2021-2022,Mechanical Engineering,30/10/1
 National Technical University of Athens,2021-2022,Naval Architects and Mechanical Engineering,27/08/1982,156,1394,134,792
 National Technical University of Athens,2021-2022,Civil Engineering,20/06/1887,158,2514,199,1344
 National Technical University of Athens,2021-2022,Chemical Engineering,30/10/1917,160,1730,192,979
-Hellenic Open University,2021-2022,Unknown,30/01/2018,91,2112,637,2112
-Hellenic Open University,2021-2022,Unknown,21/03/2018,11,808,251,808
-Hellenic Open University,2021-2022,Unknown,11/12/1998,837,4647,901,3905
-Hellenic Open University,2021-2022,Unknown,11/12/1998,32,263,72,201
-Hellenic Open University,2021-2022,Unknown,11/12/1998,185,2083,576,1492
-Hellenic Open University,2021-2022,Unknown,11/12/1998,29,425,97,238
-Hellenic Open University,2021-2022,Unknown,11/12/1998,505,2376,374,1761
-Hellenic Open University,2021-2022,Unknown,11/12/1998,310,1750,263,1117
+Hellenic Open University,2021-2022,Public Administration,30/01/2018,91,2112,637,2112
+Hellenic Open University,2021-2022,Tourism Management,21/03/2018,11,808,251,808
+Hellenic Open University,2021-2022,Business Administration,11/12/1998,837,4647,901,3905
+Hellenic Open University,2021-2022,Spanish Language and Culture,11/12/1998,32,263,72,201
+Hellenic Open University,2021-2022,Informatics,11/12/1998,185,2083,576,1492
+Hellenic Open University,2021-2022,Studies in Natural Sciences,11/12/1998,29,425,97,238
+Hellenic Open University,2021-2022,Studies in Hellenic (Greek) Culture,11/12/1998,505,2376,374,1761
+Hellenic Open University,2021-2022,Studies in European Culture,11/12/1998,310,1750,263,1117
 Hellenic Mediterranean University,2021-2022,Agriculture,07/05/2019,0,479,126,478
 Hellenic Mediterranean University,2021-2022,Business and Tourism Management,07/05/2019,5,756,203,756
 Hellenic Mediterranean University,2021-2022,Management Science and Technology,07/05/2019,26,405,49,405
@@ -1224,7 +1224,7 @@ Harokopio University,2021-2022,Informatics and Telematics,07/07/2006,71,962,149,
 Athens School of Fine Arts,2022-2023,Fine Arts,03/07/1990,89,1171,205,953
 Athens School of Fine Arts,2022-2023,Art Theory and History,07/09/2009,20,703,151,499
 Aristotle University of Thessaloniki,2022-2023,English Language and Literature,03/05/1983,205,1645,228,870
-Aristotle University of Thessaloniki,2022-2023,Unknown,01/09/2021,0,117,59,117
+Aristotle University of Thessaloniki,2022-2023,Medical English Program in AUTH,01/09/2021,0,117,59,117
 Aristotle University of Thessaloniki,2022-2023,Agricultural and Surveying Engineering,24/10/1962,78,915,86,532
 Aristotle University of Thessaloniki,2022-2023,Architectural Engineering,03/05/1983,165,1342,161,980
 Aristotle University of Thessaloniki,2022-2023,Biology,11/04/1973,128,987,145,559
@@ -1370,7 +1370,7 @@ International Hellenic University,2022-2023,Clothing Design and Technology,06/09
 International Hellenic University,2022-2023,Food Technology,24/11/1983,61,949,0,259
 International Hellenic University,2022-2023,Agricultural Technologists,06/03/2013,179,2017,0,444
 International Hellenic University,2022-2023,Physiotherapy,24/11/1983,28,477,0,111
-National and Kapodistrian University of Athens,2022-2023,Unknown,19/07/2019,0,50,53,50
+National and Kapodistrian University of Athens,2022-2023,"BA Program in the Archaeology, History, and Literature of Ancient Greece",19/07/2019,0,50,53,50
 National and Kapodistrian University of Athens,2022-2023,English Language and Literature,23/06/1951,223,4519,267,977
 National and Kapodistrian University of Athens,2022-2023,"Agricultural Development, Agrifood and Natural Resources Management",29/01/2019,2,275,69,275
 National and Kapodistrian University of Athens,2022-2023,Aerospace Science and Technology,29/01/2019,1,247,36,247
@@ -1386,7 +1386,7 @@ National and Kapodistrian University of Athens,2022-2023,Physical Education and 
 National and Kapodistrian University of Athens,2022-2023,Theater Studies,06/10/1989,76,1598,147,779
 National and Kapodistrian University of Athens,2022-2023,Theology,16/07/1982,119,4226,89,1027
 National and Kapodistrian University of Athens,2022-2023,Medicine,24/04/1837,348,3058,378,1946
-National and Kapodistrian University of Athens,2022-2023,Unknown,01/09/2022,0,38,38,38
+National and Kapodistrian University of Athens,2022-2023,Medicine,01/09/2022,0,38,38,38
 National and Kapodistrian University of Athens,2022-2023,Spanish Language and Literature,01/10/2009,66,891,51,416
 National and Kapodistrian University of Athens,2022-2023,History and Archaeology,24/04/1986,272,3934,281,1481
 National and Kapodistrian University of Athens,2022-2023,History and Philosophy of Science,05/03/1993,69,1418,133,597
@@ -1428,14 +1428,14 @@ National Technical University of Athens,2022-2023,Mechanical Engineering,30/10/1
 National Technical University of Athens,2022-2023,Naval Architects and Mechanical Engineering,27/08/1982,108,1397,126,767
 National Technical University of Athens,2022-2023,Civil Engineering,20/06/1887,151,2558,205,1318
 National Technical University of Athens,2022-2023,Chemical Engineering,30/10/1917,156,1748,178,971
-Hellenic Open University,2022-2023,Unknown,30/01/2018,257,2290,601,2290
-Hellenic Open University,2022-2023,Unknown,21/03/2018,52,885,262,885
-Hellenic Open University,2022-2023,Unknown,11/12/1998,709,3986,724,3237
-Hellenic Open University,2022-2023,Unknown,11/12/1998,36,279,70,228
-Hellenic Open University,2022-2023,Unknown,11/12/1998,149,1850,503,1342
-Hellenic Open University,2022-2023,Unknown,11/12/1998,24,359,76,217
-Hellenic Open University,2022-2023,Unknown,11/12/1998,369,1918,289,1369
-Hellenic Open University,2022-2023,Unknown,11/12/1998,261,1418,192,864
+Hellenic Open University,2022-2023,Public Administration,30/01/2018,257,2290,601,2290
+Hellenic Open University,2022-2023,Tourism Management,21/03/2018,52,885,262,885
+Hellenic Open University,2022-2023,Business Administration,11/12/1998,709,3986,724,3237
+Hellenic Open University,2022-2023,Spanish Language and Culture,11/12/1998,36,279,70,228
+Hellenic Open University,2022-2023,Informatics,11/12/1998,149,1850,503,1342
+Hellenic Open University,2022-2023,Studies in Natural Sciences,11/12/1998,24,359,76,217
+Hellenic Open University,2022-2023,Studies in Hellenic (Greek) Culture,11/12/1998,369,1918,289,1369
+Hellenic Open University,2022-2023,Studies in European Culture,11/12/1998,261,1418,192,864
 Hellenic Mediterranean University,2022-2023,Agriculture,07/05/2019,3,574,167,573
 Hellenic Mediterranean University,2022-2023,Business and Tourism Management,07/05/2019,2,938,218,938
 Hellenic Mediterranean University,2022-2023,Management Science and Technology,07/05/2019,2,444,55,444
@@ -1836,7 +1836,7 @@ Harokopio University,2022-2023,Informatics and Telematics,07/07/2006,79,1056,140
 Athens School of Fine Arts,2023-2024,Fine Arts,03/07/1990,95,1687,164,1018
 Athens School of Fine Arts,2023-2024,Art Theory and History,07/09/2009,41,730,108,511
 Aristotle University of Thessaloniki,2023-2024,English Language and Literature,03/05/1983,176,1679,225,878
-Aristotle University of Thessaloniki,2023-2024,Unknown,01/09/2021,0,171,57,171
+Aristotle University of Thessaloniki,2023-2024,Medical English Program in AUTH,01/09/2021,0,171,57,171
 Aristotle University of Thessaloniki,2023-2024,Agricultural and Surveying Engineering,24/10/1962,45,929,69,516
 Aristotle University of Thessaloniki,2023-2024,Architectural Engineering,03/05/1983,160,1349,170,971
 Aristotle University of Thessaloniki,2023-2024,Biology,11/04/1973,99,1021,150,579
@@ -1982,7 +1982,7 @@ International Hellenic University,2023-2024,Clothing Design and Technology,06/09
 International Hellenic University,2023-2024,Food Technology,24/11/1983,79,852,0,112
 International Hellenic University,2023-2024,Agricultural Technologists,06/03/2013,120,1967,0,227
 International Hellenic University,2023-2024,Physiotherapy,24/11/1983,33,425,0,16
-National and Kapodistrian University of Athens,2023-2024,Unknown,19/07/2019,9,42,42,42
+National and Kapodistrian University of Athens,2023-2024,"BA Program in the Archaeology, History, and Literature of Ancient Greece",19/07/2019,9,42,42,42
 National and Kapodistrian University of Athens,2023-2024,English Language and Literature,23/06/1951,221,4583,265,1015
 National and Kapodistrian University of Athens,2023-2024,"Agricultural Development, Agrifood and Natural Resources Management",29/01/2019,9,324,65,324
 National and Kapodistrian University of Athens,2023-2024,Aerospace Science and Technology,29/01/2019,12,231,35,231
@@ -1998,7 +1998,7 @@ National and Kapodistrian University of Athens,2023-2024,Physical Education and 
 National and Kapodistrian University of Athens,2023-2024,Theater Studies,06/10/1989,77,1647,150,775
 National and Kapodistrian University of Athens,2023-2024,Theology,16/07/1982,105,4200,115,938
 National and Kapodistrian University of Athens,2023-2024,Medicine,24/04/1837,333,3069,353,1941
-National and Kapodistrian University of Athens,2023-2024,Unknown,01/09/2022,0,69,34,69
+National and Kapodistrian University of Athens,2023-2024,Medicine,01/09/2022,0,69,34,69
 National and Kapodistrian University of Athens,2023-2024,Spanish Language and Literature,01/10/2009,64,829,35,333
 National and Kapodistrian University of Athens,2023-2024,History and Archaeology,24/04/1986,277,3793,283,1324
 National and Kapodistrian University of Athens,2023-2024,History and Philosophy of Science,05/03/1993,48,1467,127,601
@@ -2040,15 +2040,15 @@ National Technical University of Athens,2023-2024,Mechanical Engineering,30/10/1
 National Technical University of Athens,2023-2024,Naval Architects and Mechanical Engineering,27/08/1982,84,1441,117,780
 National Technical University of Athens,2023-2024,Civil Engineering,20/06/1887,131,2614,191,1342
 National Technical University of Athens,2023-2024,Chemical Engineering,30/10/1917,156,1855,182,1058
-Hellenic Open University,2023-2024,Unknown,30/01/2018,330,2240,547,2240
-Hellenic Open University,2023-2024,Unknown,21/03/2018,94,914,234,914
-Hellenic Open University,2023-2024,Unknown,11/12/1998,511,3634,731,2968
-Hellenic Open University,2023-2024,Unknown,11/12/1998,35,261,45,218
-Hellenic Open University,2023-2024,Unknown,11/12/1998,104,1653,361,1184
-Hellenic Open University,2023-2024,Unknown,01/03/2023,0,227,153,227
-Hellenic Open University,2023-2024,Unknown,11/12/1998,34,325,53,186
-Hellenic Open University,2023-2024,Unknown,11/12/1998,283,1619,245,1134
-Hellenic Open University,2023-2024,Unknown,11/12/1998,186,1217,153,752
+Hellenic Open University,2023-2024,Public Administration,30/01/2018,330,2240,547,2240
+Hellenic Open University,2023-2024,Tourism Management,21/03/2018,94,914,234,914
+Hellenic Open University,2023-2024,Business Administration,11/12/1998,511,3634,731,2968
+Hellenic Open University,2023-2024,Spanish Language and Culture,11/12/1998,35,261,45,218
+Hellenic Open University,2023-2024,Informatics,11/12/1998,104,1653,361,1184
+Hellenic Open University,2023-2024,"Studies in Film Writing, Practice, and Research",01/03/2023,0,227,153,227
+Hellenic Open University,2023-2024,Studies in Natural Sciences,11/12/1998,34,325,53,186
+Hellenic Open University,2023-2024,Studies in Hellenic (Greek) Culture,11/12/1998,283,1619,245,1134
+Hellenic Open University,2023-2024,Studies in European Culture,11/12/1998,186,1217,153,752
 Hellenic Mediterranean University,2023-2024,Agriculture,07/05/2019,50,712,165,708
 Hellenic Mediterranean University,2023-2024,Business and Tourism Management,07/05/2019,102,1078,219,1067
 Hellenic Mediterranean University,2023-2024,Management Science and Technology,07/05/2019,34,487,76,485
@@ -2306,7 +2306,7 @@ University of Ioannina,2023-2024,Nursing,24/10/1984,25,351,0,48
 University of Ioannina,2023-2024,Preschool Education,24/10/1984,18,130,0,21
 University of Ioannina,2023-2024,Agricultural Technologists,25/07/2013,20,891,0,86
 University of Crete,2023-2024,Biology,10/09/1976,109,698,126,514
-University of Crete,2023-2024,Unknown,01/09/2023,0,31,31,31
+University of Crete,2023-2024,Interational Program in Medicine in University of Crete,01/09/2023,0,31,31,31
 University of Crete,2023-2024,Materials Science and Engineering,01/09/2000,53,752,17,292
 University of Crete,2023-2024,Computer Science,15/04/1983,108,1667,195,1048
 University of Crete,2023-2024,Applied Mathematics,06/09/1999,89,1016,44,478

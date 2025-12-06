@@ -304,15 +304,19 @@ class ProgramMapper(Mapper):
             'Σπουδές στον Ελληνικό Πολιτισμό': 'Studies in Hellenic (Greek) Culture',
             'Σπουδές στον Ευρωπαϊκό Πολιτισμό': 'Studies in European Culture',
             'Σπουδές Κινηματογραφικής Γραφής, Πρακτικής και Έρευνας': 'Studies in Film Writing, Practice, and Research',
+            'Αγγλόγλωσσο Προπτυχιακό Πρόγραμμα Σπουδών του Τμήματος Ιατρικής ΑΠΘ': 'Medical English Program in AUTH',
+            'Διεθνές Προπτυχιακό Πρόγραμμα Ιατρικής Σχολής': 'Interational Program in Medicine in University of Crete'
         }
         
     def get_map(self) -> dict:
         return self.__programme_map
     
-    def map(self, programme: str) -> str:
-        if  self.__programme_map.get(programme, "Unknown") == "Unknown":
-            print(f"Warning: Programme '{programme}' not found in mapping.")
-        return self.__programme_map.get(programme, "Unknown")
+    def map(self, program: str) -> str:
+        if program.isascii():
+            return program
+        if  self.__programme_map.get(program, "Unknown") == "Unknown":
+            print(f"Warning: program '{program}' not found in mapping.")
+        return self.__programme_map.get(program, "Unknown")
     
 
 class InstituteMapper:
@@ -459,8 +463,8 @@ def scrape_data(soup: BeautifulSoup):
     soup_data = soup.find_all('div', class_='stats-item')   # get all the programmes
     scraped_data = []
     for item in soup_data:
-        programme = item.find('div', class_='stats-item-title').text.strip()
-        programme = re.search("^ΠΠΣ ::", programme) or re.search("^ΠΠΣ ΕΑΠ ::", programme)
+        program = item.find('div', class_='stats-item-title').text.strip()
+        program = re.search("^ΠΠΣ ::", program) or re.search("^ΠΠΣ ΕΑΠ ::", program) or re.search("^ΞΠΣ ::", program)
 
         established = item.find('span', class_='stats-item-date').text.strip()
         established = re.search("^Ημ/νία Ίδρυσης: ", established)
@@ -477,13 +481,13 @@ def scrape_data(soup: BeautifulSoup):
             elif variable == "Ενεργοί φοιτητές ΠΠΣ":
                 active = var.find_next_sibling('div', class_='stats-item-variable-value').text.strip()
 
-        programme = programme.string[programme.end():].strip() if programme else "Unknown"
-        programme = re.sub(r"[\(\[].*?[\)\]]", "", programme).strip()
-        programme = programme.replace(" ΤΕ", "").replace('"', "").strip()
+        program = program.string[program.end():].strip() if program else "Unknown"
+        program = re.sub(r"[\(\[].*?[\)\]]", "", program).strip()
+        program = program.replace(" ΤΕ", "").replace('"', "").strip()
         scraped_data.append({
             "institution": InstituteMapper().get_map().get(data.get("filter[instituteid]")) if data.get("filter[instituteid]") else "Unknown",
             "academic_year": AcademicYearMapper().map(data.get("filter[collectionyear]")),
-            "program": ProgramMapper().map(programme.strip('"')),
+            "program": ProgramMapper().map(program.strip('"')),
             "established": established.string[established.end():] if established else "Unknown",
             "graduate": int(graduate.replace('.', '')) if graduate != '--' else 0,
             "registered": int(registered.replace('.', '')) if registered != '--' else 0,
@@ -506,4 +510,4 @@ for year in range(2022, 2026):
 
         collected_data.append(scrape_data(soup))
 
-save_to_csv(collected_data, f"hahe_all_institutes_2022_2025.csv")
+save_to_csv(collected_data, f"hahe_all_21_24.csv")
