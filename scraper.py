@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict, Any
 import requests
 from bs4 import BeautifulSoup
 import re
