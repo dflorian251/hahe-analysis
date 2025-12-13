@@ -37,9 +37,6 @@ class ProgramMapper(Mapper):
 class InstituteMapper:
 
     def __init__(self) -> None:
-        """
-        Initializes the institute_map dictionary as an instance attribute.
-        """
         self._institute_map: Dict[str, str] = {
             # '': '- Select Institute -', 
             '1': 'Athens School of Fine Arts',
@@ -85,9 +82,6 @@ class InstituteMapper:
 class AcademicYearMapper:
 
     def __init__(self) -> None:
-        """
-        Initializes the year_map dictionary as an instance attribute.
-        """
         self._year_map: Dict[str, str] = {
             '2022': '2020-2021',
             '2023': '2021-2022',
@@ -97,22 +91,10 @@ class AcademicYearMapper:
 
     
     def get_map(self) -> Dict[str, str]:
-        """
-        Returns the initialized dictionary mapping academic year codes to names.
-        """
         return self._year_map
     
     
     def map(self, year: str) -> str:
-        """
-        Maps a given academic year code to its standardized name.
-        
-        Args:
-            year (str): The academic year code to map.
-        
-        Returns:
-            str: The standardized academic year name or "Unknown academic year" if not found.
-        """
         return self._year_map.get(year, "Unknown academic year")
 
 
